@@ -1,0 +1,75 @@
+# WS49X_01_active | Detroit Diesel DD16 600 PS
+
+sound_reverb_data : .effect.reverb.window.closed
+{
+	decay_time: 280.0
+	early_delay: 4.0
+	late_delay: 10.0
+	hf_reference: 5000.0
+	hf_decay_ratio: 25.0
+	diffusion: 35.0
+	density: 35.0
+	low_shelf_frequency: 250.0
+	low_shelf_gain: 0.1
+	high_cut: 6000.0
+	early_late_mix: 55.0
+	wet_level: -34.0
+	dry_level: -10.0
+}
+
+sound_reverb_data : .effect.reverb.window.opened
+{
+	decay_time: 450.0
+	early_delay: 8.0
+	late_delay: 18.0
+	hf_reference: 5000.0
+	hf_decay_ratio: 30.0
+	diffusion: 40.0
+	density: 40.0
+	low_shelf_frequency: 250.0
+	low_shelf_gain: 0.12
+	high_cut: 14000.0
+	early_late_mix: 60.0
+	wet_level: -33.0
+	dry_level: -10.0
+}
+
+sound_three_eq_data : .effect.equalizer.cabin.inside
+{
+	low_gain: 8.0
+	mid_gain: -0.5
+	high_gain: -2.0
+	low_crossover: 300.0
+	high_crossover: 2000.0
+	crossover_slope: 2
+}
+
+sound_three_eq_data : .effect.equalizer.cabin.outside
+{
+	low_gain: 4.0
+	mid_gain: 4.0
+	high_gain: 4.0
+	low_crossover: 200.0
+	high_crossover: 22000.0
+	crossover_slope: 2
+}
+
+sound_three_eq_data : .effect.add.window_eq.closed
+{
+	low_gain: -40.0
+	mid_gain: -40.0
+	high_gain: -40.0
+	low_crossover: 300.0
+	high_crossover: 4000.0
+	crossover_slope: 2
+}
+
+sound_three_eq_data : .effect.add.window_eq.opened
+{
+	low_gain: -12.0
+	mid_gain: -12.0
+	high_gain: -5.0
+	low_crossover: 300.0
+	high_crossover: 2000.0
+	crossover_slope: 2
+}
